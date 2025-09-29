@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '@/components/Home.vue'
 import RealidadVirtual from '@/components/RealidadVirtual.vue'
 import Educ from '@/components/Educ.vue'
@@ -6,7 +6,7 @@ import Juego2D from '@/components/Juego2D.vue'
 import BlenderModels from '@/components/BlenderModels.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(),
   routes: [
     { path: '/', name: 'home', component: Home },
     { path: '/realidad-virtual', name: 'realidad-virtual', component: RealidadVirtual },
