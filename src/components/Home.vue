@@ -1,7 +1,6 @@
 <!-- Componente Principal (tu template actual) -->
 <template>
-  <div id="app">
-    <head>
+  <head>
       <link 
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -11,6 +10,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       >
     </head>
+  <div id="app">
+    
     
     <!-- Navbar global -->
     <nav class="navbar">
