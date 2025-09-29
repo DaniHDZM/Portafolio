@@ -12,7 +12,7 @@
       <!-- Espacio para imagen -->
       <div class="image-container">
         <div class="image-placeholder">
-          <img src="../photos/EDUC.png" alt="EDUC project image">
+          <img src="../../public/EDUC.png" alt="EDUC project image">
           <p>EDUC project image</p>
         </div>
       </div>

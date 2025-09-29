@@ -14,7 +14,7 @@
 
       <!-- Foto -->
       <div class="foto-container">
-        <img src="../photos/Yo-min-fotor-20250328135220.jpg" alt="Photo of Juan Daniel Hernández Mancilla" />
+        <img src="../../public/Yo-min-fotor-20250328135220.jpg" alt="Photo of Juan Daniel Hernández Mancilla" />
       </div>
 
       <!-- Contacto -->

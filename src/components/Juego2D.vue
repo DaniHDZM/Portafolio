@@ -13,7 +13,7 @@
       <div class="image-container">
         <div class="image-placeholder">
           <i class="fa-solid fa-gamepad"></i>
-          <img src="../photos/Juego2D imagen.jpeg" alt="2D Game project image">
+          <img src="../../public/Juego2D imagen.jpeg" alt="2D Game project image">
           <p>2D Game project image</p>
         </div>
       </div>

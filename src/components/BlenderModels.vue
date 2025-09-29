@@ -13,22 +13,22 @@
       <div class="image-container grid-4">
         <div class="image-placeholder">
           <i class="fa-solid fa-rocket"></i>
-          <img src="../photos/Nave.jpeg" alt="Rick and Morty style spaceship">
+          <img src="../../public/Nave.jpeg" alt="Rick and Morty style spaceship">
           <p>Rick and Morty style spaceship</p>
         </div>
         <div class="image-placeholder">
           <i class="fa-solid fa-sword"></i>
-          <img src="../photos/Arma.jpeg" alt="Scythe modeled in Blender">
+          <img src="../../public/Arma.jpeg" alt="Scythe modeled in Blender">
           <p>Scythe</p>
         </div>
         <div class="image-placeholder">
           <i class="fa-solid fa-robot"></i>
-          <img src="../photos/PyramidHead.jpeg" alt="Robot inspired by Astrobot + Pyramid Head">
+          <img src="../../public/PyramidHead.jpeg" alt="Robot inspired by Astrobot + Pyramid Head">
           <p>Robot inspired by Astrobot + Pyramid Head</p>
         </div>
         <div class="image-placeholder">
           <i class="fa-solid fa-dog"></i>
-          <img src="../photos/Perro.jpeg" alt="Dog used in VR">
+          <img src="../../public/Perro.jpeg" alt="Dog used in VR">
           <p>Dog (used in VR)</p>
         </div>
       </div>

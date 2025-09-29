@@ -12,13 +12,13 @@
       
       <div class="image-container">
         <div class="image-placeholder">
-          <img src="../photos/Realidad virtual.jpeg" alt="Image of the virtual reality project">
+          <img src="../../public/Realidad virtual.jpeg" alt="Image of the virtual reality project">
           <p>Image of the virtual reality project</p>
         </div>
       </div>
       <div class="image-container">
         <div class="image-placeholder">
-          <img src="../photos/Realidad virtual 2.jpeg" alt="Second image of the virtual reality project">
+          <img src="../../public/Realidad virtual 2.jpeg" alt="Second image of the virtual reality project">
           <p>Development in Godot with VR</p>
         </div>
       </div>
