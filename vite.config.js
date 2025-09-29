@@ -8,7 +8,7 @@ const repoName = 'Portafolio';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: `/${repoName}/`, 
+  base: '/${repoName}/', 
   plugins: [
     vue(),
     vueDevTools(),
