@@ -21,9 +21,16 @@
           <span class="hamburger-line" :class="{ active: menuOpen }"></span>
         </button>
         <ul class="nav-menu" :class="{ open: menuOpen }">
-          <li><a href="#sobre-mí" @click="scrollToSection('sobre-mí')">About me</a></li>
-          <li><a href="#skills" @click="scrollToSection('skills')">Skills</a></li>
-          <li><a href="#proyectos" @click="scrollToSection('proyectos')">Projects</a></li>
+          <li>
+            <a @click="navigateAndScroll('sobre-mí')">About me</a>
+          </li>
+          <li>
+            <a @click="navigateAndScroll('skills')">Skills</a>
+          </li>
+          <li>
+            <a @click="navigateAndScroll('proyectos')">Projects</a>
+          </li>
+
         </ul>
       </div>
     </nav>
@@ -39,25 +46,39 @@
 
 <script setup>
 import { ref } from "vue";
+import { useRouter, useRoute } from "vue-router";
 import AboutMe from './AboutMe.vue';
 import JuanDaniel from './JuanDaniel.vue';
 import Projects from './Projects.vue';
 
 const menuOpen = ref(false);
 
+const router = useRouter();
+const route = useRoute();
+
 // Función para scroll suave a las secciones
 const scrollToSection = (sectionId) => {
-  menuOpen.value = false; // Cerrar menú móvil
-  
   const element = document.getElementById(sectionId);
   if (element) {
     const navbarHeight = document.querySelector('.navbar').offsetHeight;
-    const elementPosition = element.offsetTop - navbarHeight - 20; // 20px de margen extra
-    
+    const elementPosition = element.offsetTop - navbarHeight - 20;
+
     window.scrollTo({
       top: elementPosition,
       behavior: 'smooth'
     });
+  }
+};
+
+const navigateAndScroll = (sectionId) => {
+  menuOpen.value = false;
+
+  if (route.path !== "/") {
+    router.push("/").then(() => {
+      setTimeout(() => scrollToSection(sectionId), 300);
+    });
+  } else {
+    scrollToSection(sectionId);
   }
 };
 </script>
