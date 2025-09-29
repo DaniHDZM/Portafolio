@@ -1,49 +1,53 @@
 <template>
   <section id="proyectos">
-    <h2>Proyectos</h2>
+    <div class="section-header">
+      <i class="fas fa-folder-open header-icon"></i>
+      <h2>Projects</h2>
+    </div>
 
     <div class="grid">
       <article>
-        <h3>Realidad Virtual</h3>
+        <h3>Virtual Reality</h3>
         <p>
-          Proyecto de tesis desarrollado en <strong>Godot</strong> con la herramienta <strong>XR</strong> para implementar Realidad Virtual.
-          Incluye actualmente dos niveles: un laberinto y un cuarto de figuras y cajas.
+          Thesis project developed in <strong>Godot</strong> with the <strong>XR</strong> tool to implement Virtual Reality.
+          Currently includes two levels: a maze and a room with figures and boxes.
         </p>
-        <a href="#" class="btn">Ver más</a>
+        <router-link to="/realidad-virtual" class="btn">View more</router-link>
       </article>
 
       <article>
-        <h3>Juego 2D</h3>
+        <h3>2D Game</h3>
         <p>
-          Juego estilo <em>Super Mario Bros</em> desarrollado en <strong>Godot</strong>. 
-          Fue mi primer proyecto de videojuegos, utilizando <strong>assets gratuitos</strong> para animaciones y audio.
+          <em>Super Mario Bros</em> style game developed in <strong>Godot</strong>. 
+          It was my first videogame project, using <strong>free assets</strong> for animations and audio.
         </p>
-        <a href="#" class="btn">Ver más</a>
+        <router-link to="/juego-2d" class="btn">View more</router-link>
       </article>
 
       <article>
-        <h3>Sistema de Exámenes</h3>
+        <h3>FrontEnd Developer at EDUC</h3>
         <p>
-          Proyecto desarrollado en equipo, participando en la parte de <strong>FrontEnd</strong> con 
-          <strong>Vue 3</strong>, <strong>Vuetify</strong> y <strong>Vue-Router</strong>. 
-          Además, implementé la integración con <strong>APIs</strong> para la recopilación de datos reales.
+          Team-developed project, participating in the <strong>FrontEnd</strong> part with 
+          <strong>Vue 3</strong>, <strong>Vuetify</strong> and <strong>Vue-Router</strong>. 
+          Additionally, I implemented integration with <strong>APIs</strong> for real data collection.
         </p>
-        <a href="#" class="btn">Ver más</a>
+        <router-link to="/educ" class="btn">View more</router-link>
       </article>
 
       <article>
-        <h3>Modelos de Blender</h3>
+        <h3>Blender Models</h3>
         <p>
-          He realizado distintos modelos 3D en <strong>Blender</strong>.  
-          Algunos ejemplos son: Nave, Arma, Robot.
+          I have created different 3D models in <strong>Blender</strong>.  
+          Some examples are: <em>Spaceship</em>, <em>Weapon</em>, <em>Robot</em>.
         </p>
-        <a href="#" class="btn">Ver más</a>
+        <router-link to="/blender-models" class="btn">View more</router-link>
       </article>
     </div>
   </section>
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>
@@ -59,11 +63,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Header de sección con ícono */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.header-icon {
+  font-size: 2.2rem;
+  color: #10b981;
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
 #proyectos h2 {
   font-size: 2rem;
-  text-align: center;
   color: #10b981;
-  margin-bottom: 2rem;
+  margin: 0;
   border-bottom: 3px solid #10b981;
   display: inline-block;
   padding-bottom: 0.3rem;
@@ -110,7 +128,7 @@ article strong {
 }
 
 article em {
-  color: #34d399;
+  color: #10b981;
   font-style: italic;
 }
 
@@ -136,6 +154,15 @@ article em {
   #proyectos {
     margin: 2rem auto;
     padding: 2rem 1.5rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .header-icon {
+    font-size: 2rem;
   }
 
   .grid {
@@ -164,6 +191,10 @@ article em {
   #proyectos {
     margin: 1.5rem auto;
     padding: 1.5rem 1rem;
+  }
+
+  .header-icon {
+    font-size: 1.8rem;
   }
 
   article {
