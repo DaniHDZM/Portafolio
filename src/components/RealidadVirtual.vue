@@ -102,6 +102,7 @@ html, body {
 /* Botón de regreso */
 .back-button-container {
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .back-btn {
