@@ -6,7 +6,7 @@ import Juego2D from '@/components/Juego2D.vue'
 import BlenderModels from '@/components/BlenderModels.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('#'),
   routes: [
     { path: '/', name: 'home', component: Home },
     { path: '/realidad-virtual', name: 'realidad-virtual', component: RealidadVirtual },
