@@ -2,45 +2,44 @@
   <section id="proyectos">
     <div class="section-header">
       <i class="fas fa-folder-open header-icon"></i>
-      <h2>Projects</h2>
+      <h2>{{$t('Projects.Title')}}</h2>
     </div>
 
     <div class="grid">
       <article>
-        <h3>Virtual Reality</h3>
+        <h3>{{$t('Projects.VirtualReality.Virtual')}}</h3>
         <p>
-          Thesis project developed in <strong>Godot</strong> with the <strong>XR</strong> tool to implement Virtual Reality.
-          Currently includes two levels: a maze and a room with figures and boxes.
+          {{$t('Projects.VirtualReality.Thesis')}}<strong>{{$t('Projects.VirtualReality.Godot')}}</strong> {{$t('Projects.VirtualReality.WithThe')}} <strong>{{ $t('Projects.VirtualReality.XR') }}</strong> {{$t('Projects.VirtualReality.Tool')}}
         </p>
-        <router-link to="/realidad-virtual" class="btn">View more</router-link>
+        <router-link to="/realidad-virtual" class="btn">{{$t('Projects.VirtualReality.ViewMore')}}</router-link>
       </article>
 
       <article>
-        <h3>2D Game</h3>
+        <h3>{{ $t('Projects.2DGame.Game') }}</h3>
         <p>
-          <em>Super Mario Bros</em> style game developed in <strong>Godot</strong>. 
-          It was my first videogame project, using <strong>free assets</strong> for animations and audio.
+          <em>{{$t('Projects.2DGame.SuperM')}}</em> {{$t('Projects.2DGame.Style')}} <strong>{{$t('Projects.2DGame.Godot')}}</strong>. 
+          {{$t('Projects.2DGame.It')}} <strong>{{ $t('Projects.2DGame.Free') }}</strong> {{$t('Projects.2DGame.For')}}
         </p>
-        <router-link to="/juego-2d" class="btn">View more</router-link>
+        <router-link to="/juego-2d" class="btn">{{$t('Projects.2DGame.ViewMore')}}</router-link>
       </article>
 
       <article>
-        <h3>FrontEnd Developer at EDUC</h3>
+        <h3>{{ $t('Projects.FrontEndEduc.FrontEndDev') }}</h3>
         <p>
-          Team-developed project, participating in the <strong>FrontEnd</strong> part with 
-          <strong>Vue 3</strong>, <strong>Vuetify</strong> and <strong>Vue-Router</strong>. 
-          Additionally, I implemented integration with <strong>APIs</strong> for real data collection.
+          {{$t('Projects.FrontEndEduc.Team')}} <strong>{{$t('Projects.FrontEndEduc.FrontEnd')}}</strong> {{$t('Projects.FrontEndEduc.Part')}} 
+          <strong>{{$t('Projects.FrontEndEduc.Vue3')}}</strong>, <strong>{{$t('Projects.FrontEndEduc.Vuetify')}}</strong> {{ $t('Projects.FrontEndEduc.And') }} <strong>{{$t('Projects.FrontEndEduc.VueRouter')}}</strong>. 
+          {{$t('Projects.FrontEndEduc.Additionally')}} <strong>{{$t('Projects.FrontEndEduc.APIs')}}</strong> {{$t('Projects.FrontEndEduc.For')}}
         </p>
-        <router-link to="/educ" class="btn">View more</router-link>
+        <router-link to="/educ" class="btn">{{ $t('Projects.FrontEndEduc.ViewMore') }}</router-link>
       </article>
 
       <article>
-        <h3>Blender Models</h3>
+        <h3>{{$t('Projects.Blender.BlenderModels')}}</h3>
         <p>
-          I have created different 3D models in <strong>Blender</strong>.  
-          Some examples are: <em>Spaceship</em>, <em>Weapon</em>, <em>Robot</em>.
+          {{$t('Projects.Blender.IHave')}} <strong>{{$t('Projects.Blender.Blender')}}</strong>.  
+          {{$t('Projects.Blender.Some')}} <em>{{$t('Projects.Blender.Spaceship')}}</em>, <em>{{$t('Projects.Blender.Weapon')}}</em>, <em>{{ $t('Projects.Blender.Dog') }}</em> {{$t('Projects.Blender.And')}} <em>{{$t('Projects.Blender.Robot')}}</em>.
         </p>
-        <router-link to="/blender-models" class="btn">View more</router-link>
+        <router-link to="/blender-models" class="btn">{{$t('Projects.Blender.ViewMore')}}</router-link>
       </article>
     </div>
   </section>

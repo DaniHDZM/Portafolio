@@ -3,65 +3,67 @@
     <div class="back-button-container">
       <button class="back-btn" @click="goBack">
         <i class="arrow-left"></i>
-        Back to Projects
+        {{ $t('Projects.VirtualReality.View.Back') }}
       </button>
     </div>
 
     <div class="project-content">
-      <h1>Virtual Reality</h1>
+      <h1>{{$t('Projects.VirtualReality.View.Title')}}</h1>
       
       <div class="image-container">
         <div class="image-placeholder">
           <img src="../../public/Realidad virtual.jpeg" alt="Image of the virtual reality project">
-          <p>Image of the virtual reality project</p>
+          <p>{{$t('Projects.VirtualReality.View.Image')}}</p>
         </div>
       </div>
       <div class="image-container">
         <div class="image-placeholder">
           <img src="../../public/Realidad virtual 2.jpeg" alt="Second image of the virtual reality project">
-          <p>Development in Godot with VR</p>
+          <p>{{$t('Projects.VirtualReality.View.Development')}}</p>
         </div>
       </div>
 
       <div class="project-description">
         <p>
-          In this project, I participated in the creation of a virtual reality video game prototype using the Godot engine with the XR Tools extension.
+          {{$t('Projects.VirtualReality.View.InThis')}} 
+          <strong>{{$t('Projects.VirtualReality.View.VirtualRealityVideo')}}</strong> {{$t('Projects.VirtualReality.View.Using')}} 
+          <strong>{{$t('Projects.VirtualReality.View.GodotEngine')}}</strong> {{$t('Projects.VirtualReality.View.WithThe')}} <strong>{{$t('Projects.VirtualReality.View.XRTools')}}</strong> {{$t('Projects.VirtualReality.View.Extension')}}
         </p>
         
-        <h3>Main Responsibilities:</h3>
+        <h3>{{$t('Projects.VirtualReality.View.Main')}}</h3>
         <ol>
-          <li>Design and development of 3D assets in Blender for the construction of the scenarios.</li>
-          <li>Implementation and programming of the scenarios within the Godot Engine.</li>
-          <li>Preparation of detailed technical documentation, describing learning objectives, properties of each level, objects, sounds, and a visual representation of the organization of each scenario.</li>
+          <li><strong>{{$t('Projects.VirtualReality.View.Design')}}</strong> {{$t('Projects.VirtualReality.View.And')}} <strong>{{$t('Projects.VirtualReality.View.Deve')}}</strong> {{$t('Projects.VirtualReality.View.Of')}} <strong>{{$t('Projects.VirtualReality.View.3Dassets')}}</strong> {{$t('Projects.VirtualReality.View.In')}} <strong>{{$t('Projects.VirtualReality.View.Blender')}}</strong> {{$t('Projects.VirtualReality.View.For')}}</li>
+          <li><strong>{{$t('Projects.VirtualReality.View.Implementation')}}</strong> {{$t('Projects.VirtualReality.View.And')}} <strong>{{$t('Projects.VirtualReality.View.Programming')}}</strong> {{$t('Projects.VirtualReality.View.OfThe')}} <strong>{{$t('Projects.VirtualReality.View.GodotEngine')}}</strong>.</li>
+          <li><strong>{{$t('Projects.VirtualReality.View.Preparation')}}</strong> {{$t('Projects.VirtualReality.View.OfDetailed')}} <em>{{$t('Projects.VirtualReality.View.Technical')}}</em>{{$t('Projects.VirtualReality.View.Describing')}}</li>
         </ol>
 
-        <h3>Highlights and Achievements:</h3>
+        <h3>{{$t('Projects.VirtualReality.View.High')}}</h3>
         <ol>
-          <li>Mastery in the creation of optimized assets in **Blender for VR**.</li>
-          <li>Experience in the development, coding, and structuring of **interactive environments in Godot**.</li>
-          <li>Production of **technical documentation** that facilitates the understanding and scalability of the project.</li>
+          <li>{{$t('Projects.VirtualReality.View.Mastery')}} <strong>{{$t('Projects.VirtualReality.View.BlenderFor')}}</strong>.</li>
+          <li>{{$t('Projects.VirtualReality.View.Experience')}} <strong>{{$t('Projects.VirtualReality.View.Development')}}</strong>, <strong>{{$t('Projects.VirtualReality.View.Coding')}}</strong> {{ $t('Projects.VirtualReality.View.And') }} <strong>{{$t('Projects.VirtualReality.View.Structuring')}}</strong> {{$t('Projects.VirtualReality.View.Of')}} <em>{{$t('Projects.VirtualReality.View.Interactive')}}</em>.</li>
+          <li>{{$t('Projects.VirtualReality.View.Production')}} <strong>{{$t('Projects.VirtualReality.View.Technical')}}</strong> {{$t('Projects.VirtualReality.View.That')}}</li>
         </ol>
       </div>
 
       <div class="tech-info">
         <div class="tech-section">
-          <h3>Tools Used:</h3>
+          <h3>{{$t('Projects.VirtualReality.View.Tools')}}</h3>
           <div class="tools-grid">
             <div class="tool-item">
-              <span class="tool-name">Godot</span>
+              <span class="tool-name">{{$t('Projects.VirtualReality.View.Godot')}}</span>
             </div>
             <div class="tool-item">
-              <span class="tool-name">Blender</span>
+              <span class="tool-name">{{$t('Projects.VirtualReality.View.Blender')}}</span>
             </div>
           </div>
         </div>
 
         <div class="learning-section">
-          <h3>Things Learned:</h3>
+          <h3>{{$t('Projects.VirtualReality.View.Things')}}</h3>
           <div class="learning-tags">
-            <span class="learning-tag">Software Infrastructure</span>
-            <span class="learning-tag">Video Game Industry</span>
-            <span class="learning-tag">Game Design</span>
+            <span class="learning-tag">{{$t('Projects.VirtualReality.View.Software')}}</span>
+            <span class="learning-tag">{{$t('Projects.VirtualReality.View.VideoGame')}}</span>
+            <span class="learning-tag">{{$t('Projects.VirtualReality.View.GameDesign')}}</span>
           </div>
         </div>
       </div>
@@ -79,7 +81,6 @@ const goBack = () => {
 </script>
 
 <style scoped>
-/* (The CSS remains the same as it is styling, not content) */
 html, body {
   border: none;
   margin: 0;
@@ -89,6 +90,7 @@ html, body {
   color: #f9fafb;
   font-family: 'Poppins', sans-serif;
 }
+
 #realidad-virtual {
   max-width: 900px;
   margin: 0 auto;
@@ -304,6 +306,17 @@ html, body {
 .learning-tag:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+/* Estilo para strong y em */
+strong {
+  color: #10b981;
+  font-weight: 700;
+}
+
+em {
+  color: #10b981;
+  font-style: italic;
 }
 
 /* Responsive */

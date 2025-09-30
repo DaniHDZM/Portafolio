@@ -7,8 +7,8 @@
     <main>
       <section id="bienvenido">
         <p>
-          Welcome to my portfolio as a <strong>FrontEnd developer</strong> and 
-          <strong>videogame developer</strong>.
+          {{ $t('JuanDaniel.Welcome') }} <strong> {{ $t('JuanDaniel.FrontEnd') }} </strong> {{$t('JuanDaniel.And')}} 
+          <strong>{{ $t('JuanDaniel.Videogame') }}</strong>.
         </p>
       </section>
 
@@ -20,11 +20,11 @@
       <!-- Contacto -->
       <section id="contacto">
         <p>
-          If you want to get in touch with me, write to 
+          {{ $t('JuanDaniel.Contact') }} 
           <a href="mailto:sayu142184@gmail.com">sayu142184@gmail.com</a>
         </p>
         <button>
-          <a href="../../public/CV.pdf" target="_blank">Download CV</a>
+          <a href="../../../Portafolio/public/CV.pdf" target="_blank">{{ $t('JuanDaniel.Download') }}</a>
         </button>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/juan-daniel-hernandez-mancilla-bb1413284/" target="_blank">

@@ -2,31 +2,29 @@
   <section id="sobre-mí">
     <div class="section-header">
       <i class="fas fa-user-circle header-icon"></i>
-      <h2>About me</h2>
+      <h2>{{$t('AboutMe.About')}}</h2>
     </div>
     
     <p>
-      My name is Daniel, I am 21 years old and I am a <strong>Software Engineering</strong> student at the Faculty of Telematics of the University of Colima. 
-      I am currently specializing in <strong>FrontEnd development</strong> and <strong>videogame creation</strong>, areas that I am passionate about for their creativity 
-      and the possibility of impacting the user experience.
+      {{ $t('AboutMe.Myname') }} <strong>{{ $t('AboutMe.Software') }}</strong> {{ $t('AboutMe.Student') }} <strong>{{$t('AboutMe.FrontEnd')}}</strong> {{$t('AboutMe.And')}} <strong>{{$t('AboutMe.Videogame')}}</strong>{{ $t('AboutMe.Areas') }}
     </p>
     <p>
-      I enjoy participating in projects that allow me to learn, collaborate and contribute <em>innovative solutions</em>. 
-      My goal is to establish myself as a developer, focusing on <strong>attractive, functional and interactive digital experiences</strong>.
+      {{$t('AboutMe.Enjoy')}}<em>{{$t('AboutMe.Innovative')}}</em>. 
+      {{ $t('AboutMe.Mygoal') }}<strong>{{$t('AboutMe.Attractive')}}</strong>.
     </p>
   </section>
 
   <section id="skills">
     <div class="section-header">
       <i class="fas fa-tools header-icon"></i>
-      <h2>Skills</h2>
+      <h2>{{$t('AboutMe.Skills')}}</h2>
     </div>
 
     <!-- Programming languages -->
     <div class="skill-category">
       <div class="category-header">
         <i class="fas fa-code category-icon"></i>
-        <h3>Programming languages</h3>
+        <h3>{{$t('AboutMe.Programming')}}</h3>
       </div>
       <div class="skills-grid">
         <div class="skill-item html">
@@ -48,7 +46,7 @@
     <div class="skill-category">
       <div class="category-header">
         <i class="fas fa-layer-group category-icon"></i>
-        <h3>Frameworks and libraries</h3>
+        <h3>{{ $t('AboutMe.Frameworks') }}</h3>
       </div>
       <div class="skills-grid">
         <div class="skill-item vue">
@@ -70,7 +68,7 @@
     <div class="skill-category">
       <div class="category-header">
         <i class="fas fa-wrench category-icon"></i>
-        <h3>Software and tools</h3>
+        <h3>{{$t('AboutMe.SoftwareTools')}}</h3>
       </div>
       <div class="skills-grid">
         <div class="skill-item blender">
@@ -96,16 +94,16 @@
     <div class="skill-category">
       <div class="category-header">
         <i class="fas fa-globe category-icon"></i>
-        <h3>Languages</h3>
+        <h3>{{$t('AboutMe.Languages')}}</h3>
       </div>
       <div class="skills-grid">
         <div class="skill-item spanish">
           <i class="fas fa-flag skill-icon"></i>
-          <span>Native Spanish</span>
+          <span>{{$t('AboutMe.Spanish')}}</span>
         </div>
         <div class="skill-item english">
           <i class="fas fa-language skill-icon"></i>
-          <span>Basic English</span>
+          <span>{{$t('AboutMe.English')}}</span>
         </div>
       </div>
     </div>
@@ -120,7 +118,6 @@ section {
   padding: 3rem;
   background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   border: 1px solid rgba(16, 185, 129, 0.1);
   position: relative;
   overflow: hidden;

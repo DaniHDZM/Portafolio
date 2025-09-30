@@ -3,26 +3,26 @@
     <div class="back-button-container">
       <button class="back-btn" @click="goBack">
         <i class="arrow-left"></i>
-        Back to Projects
+        {{ $t('Projects.2DGame.View.Back') }}
       </button>
     </div>
     <div class="project-content">
-      <h1>2D Game</h1>
+      <h1>{{ $t('Projects.2DGame.View.2DGame') }}</h1>
 
       <!-- Espacio para imagen -->
       <div class="image-container">
         <div class="image-placeholder">
           <i class="fa-solid fa-gamepad"></i>
           <img src="../../public/Juego2D imagen.jpeg" alt="2D Game project image">
-          <p>2D Game project image</p>
+          <p>{{ $t('Projects.2DGame.View.GameProject') }}</p>
         </div>
       </div>
 
       <!-- Descripción -->
       <div class="project-description">
         <p>
-          This was a project developed in <strong>Godot</strong> where it is a <em>Super Mario Bros</em> style game. 
-          It has 2 levels where the objective is to collect fruits that give points and dodge or eliminate enemies to obtain even more score.
+          {{ $t('Projects.2DGame.View.This') }} <strong>{{ $t('Projects.2DGame.View.Godot') }}</strong> {{ $t('Projects.2DGame.View.Where') }} <em>{{ $t('Projects.2DGame.View.SuperM') }}</em> {{ $t('Projects.2DGame.View.Style') }} 
+          {{ $t('Projects.2DGame.View.It') }}
         </p>
       </div>
 
@@ -30,21 +30,21 @@
       <div class="tech-info">
         <!-- Herramientas -->
         <div class="tech-section">
-          <h3>Tools used:</h3>
+          <h3>{{ $t('Projects.2DGame.View.Tools') }}</h3>
           <div class="tools-grid">
-            <div class="tool-item"><span class="tool-name">Godot</span></div>
-            <div class="tool-item"><span class="tool-name">Free assets</span></div>
-            <div class="tool-item"><span class="tool-name">GDScript</span></div>
+            <div class="tool-item"><span class="tool-name">{{ $t('Projects.2DGame.View.Godot') }}</span></div>
+            <div class="tool-item"><span class="tool-name">{{ $t('Projects.2DGame.View.Free') }}</span></div>
+            <div class="tool-item"><span class="tool-name">{{ $t('Projects.2DGame.View.GDScript') }}</span></div>
           </div>
         </div>
 
         <!-- Cosas aprendidas -->
         <div class="learning-section">
-          <h3>Things learned:</h3>
+          <h3>{{ $t('Projects.2DGame.View.Things') }}</h3>
           <div class="learning-tags">
-            <span class="learning-tag">2D game development</span>
-            <span class="learning-tag">Level creation</span>
-            <span class="learning-tag">Level design</span>
+            <span class="learning-tag">{{ $t('Projects.2DGame.View.2D') }}</span>
+            <span class="learning-tag">{{ $t('Projects.2DGame.View.LevelC') }}</span>
+            <span class="learning-tag">{{ $t('Projects.2DGame.View.LevelD') }}</span>
           </div>
         </div>
       </div>

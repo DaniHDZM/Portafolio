@@ -3,27 +3,27 @@
     <div class="back-button-container">
       <button class="back-btn" @click="goBack">
         <i class="arrow-left"></i>
-        Back to Projects
+        {{ $t('Projects.FrontEndEduc.View.Back') }}
       </button>
     </div>
     <div class="project-content">
-      <h1>FrontEnd Developer at EDUC</h1>
+      <h1>{{ $t('Projects.FrontEndEduc.View.Title') }}</h1>
 
       <!-- Espacio para imagen -->
       <div class="image-container">
         <div class="image-placeholder">
           <img src="../../public/EDUC.png" alt="EDUC project image">
-          <p>EDUC project image</p>
+          <p>{{ $t('Projects.FrontEndEduc.View.Image') }}</p>
         </div>
       </div>
 
       <!-- Descripción breve -->
       <div class="project-description">
         <p>
-          This project was for my <strong>constitutional service</strong> and was completed in collaboration with two front-end colleagues and a back-end team.
+          {{ $t('Projects.FrontEndEduc.View.This') }} <strong>{{ $t('Projects.FrontEndEduc.View.Constitutional') }}</strong> {{ $t('Projects.FrontEndEduc.View.AndWas') }}
         </p>
         <p>
-          My job was to create a <em>prototype of the website</em> in <strong>Figma</strong>. The front-end development used <strong>Vue 3</strong> along with <strong>Vuetify</strong> and <strong>CSS</strong> for the design. I also had to use <strong>Vue-Router</strong> for navigation and <em>API calls</em> to retrieve data.
+          {{ $t('Projects.FrontEndEduc.View.MyJob') }} <em>{{ $t('Projects.FrontEndEduc.View.Prototype') }}</em> {{ $t('Projects.FrontEndEduc.View.In') }} <strong>{{ $t('Projects.FrontEndEduc.View.Figma') }}</strong>. {{ $t('Projects.FrontEndEduc.View.Frontend') }} <strong>{{ $t('Projects.FrontEndEduc.View.Vue') }}</strong> {{ $t('Projects.FrontEndEduc.View.Along') }} <strong>{{ $t('Projects.FrontEndEduc.View.Vuetify') }}</strong> {{ $t('Projects.FrontEndEduc.View.And') }} <strong>{{ $t('Projects.FrontEndEduc.View.Css') }}</strong> f{{ $t('Projects.FrontEndEduc.View.ForThe') }} <strong>{{ $t('Projects.FrontEndEduc.View.Router') }}</strong> {{ $t('Projects.FrontEndEduc.View.ForNav') }} <em>{{ $t('Projects.FrontEndEduc.View.ApiCalls') }}</em> {{ $t('Projects.FrontEndEduc.View.ToRetrieve') }}
         </p>
       </div>
 
@@ -31,22 +31,22 @@
       <div class="tech-info">
         <!-- Herramientas -->
         <div class="tech-section">
-          <h3>Tools used:</h3>
+          <h3>{{ $t('Projects.FrontEndEduc.View.Tools') }}</h3>
           <div class="tools-grid">
-            <div class="tool-item"><span class="tool-name">Vue 3</span></div>
-            <div class="tool-item"><span class="tool-name">Figma</span></div>
-            <div class="tool-item"><span class="tool-name">APIs</span></div>
-            <div class="tool-item"><span class="tool-name">Frontend Development</span></div>
+            <div class="tool-item"><span class="tool-name">{{ $t('Projects.FrontEndEduc.View.Vue') }}</span></div>
+            <div class="tool-item"><span class="tool-name">{{ $t('Projects.FrontEndEduc.View.Figma') }}</span></div>
+            <div class="tool-item"><span class="tool-name">{{ $t('Projects.FrontEndEduc.View.Api') }}</span></div>
+            <div class="tool-item"><span class="tool-name">{{ $t('Projects.FrontEndEduc.View.FrontEndDev') }}</span></div>
           </div>
         </div>
 
         <!-- Cosas aprendidas -->
         <div class="learning-section">
-          <h3>Things learned:</h3>
+          <h3>{{ $t('Projects.FrontEndEduc.View.Things') }}</h3>
           <div class="learning-tags">
-            <span class="learning-tag">Teamwork</span>
-            <span class="learning-tag">Vue and Vue-Router</span>
-            <span class="learning-tag">API Calls</span>
+            <span class="learning-tag">{{ $t('Projects.FrontEndEduc.View.Teamwork') }}</span>
+            <span class="learning-tag">{{ $t('Projects.FrontEndEduc.View.VueRouter') }}</span>
+            <span class="learning-tag">{{ $t('Projects.FrontEndEduc.View.ApiCalls') }}</span>
           </div>
         </div>
       </div>

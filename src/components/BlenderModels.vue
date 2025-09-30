@@ -3,51 +3,51 @@
     <div class="back-button-container">
       <button class="back-btn" @click="goBack">
         <i class="arrow-left"></i>
-        Back to Projects
+        {{$t('Projects.Blender.View.Back')}}
       </button>
     </div>
     <div class="project-content">
-      <h1>Blender Models</h1>
+      <h1>{{$t('Projects.Blender.View.BlenderModels')}}</h1>
 
       <!-- Contenedor de imágenes -->
       <div class="image-container grid-4">
         <div class="image-placeholder">
           <i class="fa-solid fa-rocket"></i>
           <img src="../../public/Nave.jpeg" alt="Rick and Morty style spaceship">
-          <p>Rick and Morty style spaceship</p>
+          <p>{{$t('Projects.Blender.View.Rick')}}</p>
         </div>
         <div class="image-placeholder">
           <i class="fa-solid fa-sword"></i>
           <img src="../../public/Arma.jpeg" alt="Scythe modeled in Blender">
-          <p>Scythe</p>
+          <p>{{$t('Projects.Blender.View.Weapon')}}</p>
         </div>
         <div class="image-placeholder">
           <i class="fa-solid fa-robot"></i>
           <img src="../../public/PyramidHead.jpeg" alt="Robot inspired by Astrobot + Pyramid Head">
-          <p>Robot inspired by Astrobot + Pyramid Head</p>
+          <p>{{$t('Projects.Blender.View.Robot')}}</p>
         </div>
         <div class="image-placeholder">
           <i class="fa-solid fa-dog"></i>
           <img src="../../public/Perro.jpeg" alt="Dog used in VR">
-          <p>Dog (used in VR)</p>
+          <p>{{$t('Projects.Blender.View.Dog')}}</p>
         </div>
       </div>
 
       <!-- Descripción -->
       <div class="project-description">
         <p>
-          These are some of the <strong>3D models</strong> I have created in <strong>Blender</strong>, each one with a <em>unique style</em> 
-          and applied to different projects, from <em>videogames</em> to <strong>visual prototypes</strong>.
+          {{$t('Projects.Blender.View.These')}} <strong>{{$t('Projects.Blender.View.3Dmodels')}}</strong>. {{$t('Projects.Blender.View.IHave')}} <strong>{{$t('Projects.Blender.View.Blender')}}</strong>, {{$t('Projects.Blender.View.Each')}} <em>{{$t('Projects.Blender.View.Unique')}}</em> 
+          {{$t('Projects.Blender.View.Applied')}} <em>{{$t('Projects.Blender.View.Videogames')}}</em> {{$t('Projects.Blender.View.To')}} <strong>{{$t('Projects.Blender.View.Visual')}}</strong>.
         </p>
       </div>
 
       <!-- Cosas aprendidas -->
       <div class="learning-section">
-        <h3>Things learned:</h3>
+        <h3>{{$t('Projects.Blender.View.Things')}}</h3>
         <div class="learning-tags">
-          <span class="learning-tag">Basic 3D modeling</span>
-          <span class="learning-tag">Model optimization</span>
-          <span class="learning-tag">Export for videogames</span>
+          <span class="learning-tag">{{$t('Projects.Blender.View.Basic')}}</span>
+          <span class="learning-tag">{{$t('Projects.Blender.View.Model')}}</span>
+          <span class="learning-tag">{{$t('Projects.Blender.View.Export')}}</span>
         </div>
       </div>
     </div>
