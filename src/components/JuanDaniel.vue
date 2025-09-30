@@ -24,7 +24,7 @@
           <a href="mailto:sayu142184@gmail.com">sayu142184@gmail.com</a>
         </p>
         <button>
-          <a href="../../../Portafolio/public/CV.pdf" target="_blank">{{ $t('JuanDaniel.Download') }}</a>
+          <a href="./CV.pdf" target="_blank">{{ $t('JuanDaniel.Download') }}</a>
         </button>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/juan-daniel-hernandez-mancilla-bb1413284/" target="_blank">
