@@ -73,6 +73,13 @@ const navigateAndScroll = (sectionId) => {
     scrollToSection(sectionId);
   }
 };
+
+const circle = document.querySelector('.cursor-circle');
+
+    document.addEventListener('mousemove', (e) => {
+      circle.style.top = `${e.clientY}px`;
+      circle.style.left = `${e.clientX}px`;
+    });
 </script>
 
 <style>
